@@ -55,3 +55,4 @@ adj = ['Disciplined', 'Dark', 'Exceptional', 'Quick-Witted', 'Fair', 'Creative',
        'Self-Starter', 'Sharp-Witted', 'Quick', 'Broad-Minded', 'Modern', 'Fair Minded', 'Busy', 'Leisurely',
        'Respectable', 'Fervent', 'Dignified', 'Tense', 'Silly', 'Energetic', 'Charming', 'Obedient', 'Venerable',
        'Warm', 'Healthy', 'Powerful', 'Nurturing', 'Perky', 'Level', 'Reflective']
+       
