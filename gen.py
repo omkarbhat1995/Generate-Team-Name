@@ -6,6 +6,7 @@ def pre_process(a):
     a = list(set(a))
     for i in range(len(a)):
         a[i] = a[i].title()
+    a = list(set(a))
     return a
 
 
