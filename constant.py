@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # constants
 noun = ["Association", "Band", "Body", "Bunch", "Class", "Cohort", "Company", "Crowd", "Gang", "Group", "Lot", "Mass",
         "Party", "Posse", "Set", "Society", "Squad", "Staff", "Team", "Tribe", "Group", "Crowd", "Gang", "Squad",
