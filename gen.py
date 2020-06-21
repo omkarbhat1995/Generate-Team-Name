@@ -10,7 +10,11 @@ def pre_process(a):
     a = list(set(a))
     return a
 
-
+"""
+Function: Main to Generate a Randomized Team Name 
+Parameters: Null
+Returns: A Team Name
+"""
 def main():
     adj = pre_process(constant.adj)
     noun = pre_process(constant.noun)
