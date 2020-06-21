@@ -10,17 +10,24 @@ def pre_process(a):
     a = list(set(a))
     return a
 
+
 """
 Function: Main to Generate a Randomized Team Name 
 Parameters: Null
 Returns: A Team Name
 """
 
+
 def main():
     verb = pre_process(constant.verb)
-    adj = pre_process(constant.adj)
     noun = pre_process(constant.noun)
-    output = str(random.choice(verb)) + " " + str(random.choice(adj)) + " " + str(random.choice(noun))
+    # Input from user
+    if input =="Positive":
+        adj = pre_process(constant.adj_pos)
+        output = str(random.choice(verb)) + " " + str(random.choice(adj)) + " " + str(random.choice(noun))
+    else:
+        adj = pre_process(constant.adj_neg)
+        output = str(random.choice(verb)) + " " + str(random.choice(adj)) + " " + str(random.choice(noun))
     print(output)
 
 
