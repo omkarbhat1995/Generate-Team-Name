@@ -2,6 +2,12 @@
 import constant
 import random
 
+"""
+Function: Pre-Processes Data into a Predetermined Fashion
+Parameter: List of Elements (Duplicate elements maybe present)
+Return: List of Elements - Formatted Removed Duplicate
+"""
+
 
 def pre_process(a):
     a = list(set(a))
@@ -21,15 +27,22 @@ Returns: A Team Name
 def main():
     verb = pre_process(constant.verb)
     noun = pre_process(constant.noun)
-    # Input from user
-    if input =="Positive":
-        adj = pre_process(constant.adj_pos)
-        output = str(random.choice(verb)) + " " + str(random.choice(adj)) + " " + str(random.choice(noun))
-    else:
-        adj = pre_process(constant.adj_neg)
-        output = str(random.choice(verb)) + " " + str(random.choice(adj)) + " " + str(random.choice(noun))
+    input = "Positive"
+    try:
+        if input == "Positive":
+            adj = pre_process(constant.adj_pos)
+            output = str(random.choice(verb)) + " " + str(random.choice(adj)) + " " + str(random.choice(noun))
+        elif input == "Negative":
+            adj = pre_process(constant.adj_neg)
+            output = str(random.choice(verb)) + " " + str(random.choice(adj)) + " " + str(random.choice(noun))
+    except Exception as e:
+        print(f"Exception while creating a name: {e}")
     print(output)
 
+
+"""
+Checks if the code has a main, if it does it executes that.
+"""
 
 if __name__ == '__main__':
     main()
